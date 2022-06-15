@@ -1,0 +1,101 @@
+body{
+    background-color: #343434;
+    color: white; /*tudo o que ta dentro do body muda para branco*/
+    font-family: poppinsregular;
+    max-width: 1200px; /*ajuda a nao espalhar o corpo em diferentes resolucoes*/
+    margin: 0 auto; /*site vai ficar no meio*/
+    padding: 15px; /*meio que faz uma margem em volta, apertando o corpo pro centro, mais afunilado*/
+}
+
+header{
+    display: flex; /*flex ele e um metodo de estilizacao do css, que e mais simples de posicionar elementos*/
+    flex-direction: row; /*transformar header em uma linha, elementos um do lado do outro, antes era embaixo*/
+    justify-content: space-between; /*separa as divs ou elemntos*/
+    align-items: center; /*alinhas os elementos*/
+}
+
+#title{
+    flex-direction: column; /*titulo em coluna fixa*/
+    line-height: 10px; /*junta mais as fontes*/
+}
+
+li{ /*listas*/
+    display: inline-block; /*lista um do lado da outra, bloqueia delas se espalharem*/
+    margin: 20px;/*separar cada li*/
+}
+
+a{ /*listas*/
+    color: white;
+}
+
+a:hover{ /*efeito da lista*/
+    color: rgb(132, 14, 201);
+    transition: 0.3s all; /*suavizar o efeito*/
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px; /*essa padding vai servir para empurrar o conteudo q da dentro da borda mais pra dentro, e a borda um pouco mais pra fora*/
+    border-radius: 20px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(132, 14, 201); /*botao vai ficar roxo*/
+    color: white; /*fonte vai ficar branca agora*/
+}
+
+h1{
+    font-weight: 200; /*afinar a fonte do titulo*/
+}
+
+main{ /*article e aside*/
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{ /*tudo o que for alterado aqui, se existe algum span no body la vai ser alterado tambem*/
+    color: rgb(132, 14, 201)
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px; /*vai fazer o paragrafo ter uma largura maxima de 500 pixels*/
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%; /*ele vai ficar 70 % o tamanho da div pai dele, form ta 100% */
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;  /*largura de 50% do tamanho do form que e 100%*/
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;/**/
+}
+
+input{
+    margin-top: 20px; /*separando os inputs*/
+    height: 20px; /*aumentar tamanho do formulario*/
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+
+}
